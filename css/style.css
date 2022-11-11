@@ -141,13 +141,19 @@ main {
 		display: flex;
 		flex-direction: column;
 	}
-	.one-card, .two-card, .three-card, .four-card {
-		position:static;
-		
+
+	.one-card,
+	.two-card,
+	.three-card,
+	.four-card {
+		position: static;
+
 	}
+
 	.card {
 		margin-top: 50px;
 	}
+
 	.card:first-child {
 		margin-top: 130px;
 	}
