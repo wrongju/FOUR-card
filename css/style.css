@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: hsl(0, 0%, 98%);
+}
+
+main {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* UP */
+.wrapper-up {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 550px;
+	text-align: center;
+	line-height: 1.4;
+	margin-top: 25px;
+	position: relative;
+	top: 55px;
+}
+
+.up-title {
+	font-size: 36px;
+	font-weight: 200;
+}
+
+.middle-title {
+	font-size: 36px;
+}
+
+.down-title {
+	font-size: 15.5px;
+	margin-top: 18px;
+	color: rgba(0, 0, 0, 0.361);
+	line-height: 1.6;
+}
+
+/* UP */
+
+.wrapper-down {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	position: relative;
+	justify-content: center;
+}
+
+.card {
+	max-width: 350px;
+	background-color: rgb(255, 255, 255);
+	padding: 27px 34px 31px 33px;
+	border-radius: 5px;
+	box-shadow: 5px 34px 66px -12px rgba(218, 227, 240, 1);
+	transition: .5s ease;
+}
+
+.card:hover {
+	transform: translate(0px, -25px) scale(.9);
+	cursor: pointer;
+}
+
+.one-card {
+	grid-area: 2 / 1 / 3 / 2;
+	border-top: 5px solid hsl(180, 62%, 55%);
+	position: relative;
+	right: 30px;
+	top: 15px;
+}
+
+.two-card {
+	grid-area: 1 / 2 / 2 / 3;
+	border-top: 5px solid hsl(0, 78%, 62%);
+	position: relative;
+	top: 125px;
+}
+
+.three-card {
+	grid-area: 3 / 2 / 4 / 3;
+	border-top: 5px solid hsl(34, 97%, 64%);
+	position: relative;
+	bottom: 90px;
+}
+
+.four-card {
+	grid-area: 2 / 3 / 3 / 4;
+	border-top: 5px solid hsl(212, 86%, 64%);
+	position: relative;
+	left: 30px;
+	top: 15px;
+}
+
+.svg-block {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 40px;
+}
+
+.card-title {
+	font-size: 20px;
+}
+
+.card-paragraph {
+	font-size: 13px;
+	margin-top: 10px;
+	line-height: 1.6;
+	color: rgba(0, 0, 0, 0.396);
+}
+
+@media screen and (max-width: 500px) {
+	.wrapper-up {
+		max-width: 350px;
+	}
+
+	.up-title {
+		font-size: 25px;
+	}
+
+	.middle-title {
+		font-size: 27px;
+	}
+
+	.down-title {
+		font-size: 15px;
+	}
+
+	.wrapper-down {
+		display: flex;
+		flex-direction: column;
+	}
+	.one-card, .two-card, .three-card, .four-card {
+		position:static;
+		
+	}
+	.card {
+		margin-top: 50px;
+	}
+	.card:first-child {
+		margin-top: 130px;
+	}
+}
